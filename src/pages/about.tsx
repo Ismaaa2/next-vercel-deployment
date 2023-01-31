@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MainLayout } from "@/components/layout/MainLayout";
-import { LightLayout } from "@/components/layout/LightLayout";
+import { MainLayout } from "../components/layout/MainLayout";
+import { LightLayout } from "../components/layout/LightLayout";
 
 const about = () => (
   <>
@@ -29,7 +29,7 @@ const about = () => (
   </>
 );
 
-about.getLayout = function getLayout(page) {
+about.getLayout = function getLayout(page: JSX.Element) {
   return (
     <MainLayout>
       <LightLayout>{page}</LightLayout>
